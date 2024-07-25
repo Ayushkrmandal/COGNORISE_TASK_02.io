@@ -1,0 +1,170 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top-container {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(135deg, #ffebc8, #ffdfba);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-left h2 {
+    margin: 0;
+    color: #ff6f61;
+    font-weight: bold; 
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#searchBar {
+    width: 40%; 
+    padding: 8px; 
+    border: 1px solid #ff6f61;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-greeting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#currentDate, #greeting {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+.container {
+    background: linear-gradient(135deg, #ffffff, #ffe8e8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 3px solid #ff6f61;
+}
+
+h1 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 60%;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#addTaskButton, #clearAllButton {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff6f61, #de4839);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10px;
+}
+
+#addTaskButton {
+    margin-right: 10px;
+}
+
+#addTaskButton:hover, #clearAllButton:hover {
+    background: linear-gradient(135deg, #de4839, #c4392b);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+li {
+    background: linear-gradient(135deg, #ffebc8, #ffdfba);
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ff6f61;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+button.edit, button.delete, button.save {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin-left: 5px;
+    transition: background 0.3s;
+}
+
+button.delete {
+    background: linear-gradient(135deg, #ff6f61, #de4839);
+}
+
+button.edit:hover, button.save:hover {
+    background: linear-gradient(135deg, #0083b0, #005f8d);
+}
+
+button.delete:hover {
+    background: linear-gradient(135deg, #de4839, #c4392b);
+}
+
+.edit-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+}
