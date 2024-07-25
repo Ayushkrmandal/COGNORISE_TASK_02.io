@@ -1,0 +1,2 @@
+# COGNORISE_TASK_02.io
+TO - DO - LIST 
